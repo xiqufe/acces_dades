@@ -42,7 +42,7 @@ public class AEV01 {
 		if(f.isFile()) {
 			//Grandaria
 			Long grandaria = f.length();
-			System.out.println("Grandaria: "+grandaria.toString());
+			System.out.println("Grandaria: "+grandaria+" Bytes");
 		} else {
 			//Si es directori
 			//Llista archius
@@ -53,13 +53,13 @@ public class AEV01 {
 			}
 			//Espai lliure
 			long espailliure = f.getFreeSpace();
-			System.out.println("Espai lliure: "+(espailliure/1024/1024/1024)+"Gb");
+			System.out.println("Espai lliure: "+(espailliure/1024/1024/1024)+" Gb");
 			//Espai ocupat
 			long espaiocupat =f.getTotalSpace()-f.getFreeSpace();
-			System.out.println("Espai ocupat: "+(espaiocupat/1024/1024/1024)+"Gb");
+			System.out.println("Espai ocupat: "+(espaiocupat/1024/1024/1024)+" Gb");
 			//Espai total
 			long espaitotal = f.getUsableSpace();
-			System.out.println("Espai total: "+(espaitotal/1024/1024/1024)+"Gb");
+			System.out.println("Espai total: "+(espaitotal/1024/1024/1024)+" Gb");
 		}
 		
 		} catch(SecurityException e) {
