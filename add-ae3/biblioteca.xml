@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<Biblioteca>
+    <llibre identificador="0">
+        <titol>Harry Potter</titol>
+        <autor>Edu Rua</autor>
+        <anyPublicacio>2015</anyPublicacio>
+        <editorial>Github</editorial>
+        <numPagines>130</numPagines>
+    </llibre>
+    <llibre identificador="1">
+        <titol>El señor de los anillos</titol>
+        <autor>Pau Nicolas</autor>
+        <anyPublicacio>2004</anyPublicacio>
+        <editorial>Discord</editorial>
+        <numPagines>210</numPagines>
+    </llibre>
+    <llibre identificador="2">
+        <titol>Star Wars</titol>
+        <autor>Yosu Itago</autor>
+        <anyPublicacio>2008</anyPublicacio>
+        <editorial>Java</editorial>
+        <numPagines>300</numPagines>
+    </llibre>
+    <llibre identificador="3">
+        <titol>Florida</titol>
+        <autor>Enrique</autor>
+        <anyPublicacio>2021</anyPublicacio>
+        <editorial>FloridaOberta</editorial>
+        <numPagines>999</numPagines>
+    </llibre>
+    <llibre identificador="4">
+        <titol>You</titol>
+        <autor>Alejandro</autor>
+        <anyPublicacio>2015</anyPublicacio>
+        <editorial>Edelvives</editorial>
+        <numPagines>500</numPagines>
+    </llibre>
+</Biblioteca>
