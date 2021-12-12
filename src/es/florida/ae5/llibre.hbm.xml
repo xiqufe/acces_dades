@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="es.florida.ae5">
+	<class name="Llibre" table="llibres">
+		<id name="identificador" column="identificador">
+			<generator class="increment" />
+		</id>
+		<property name="titol" type="string" column="titol" />
+		<property name="autor" type="string" column="autor" />
+		<property name="anyPublicacio" type="string" column="anyPublicacio" />
+		<property name="editorial" type="string" column="editorial" />
+		<property name="numPagines" type="string" column="pagines" />
+	</class>
+</hibernate-mapping>
