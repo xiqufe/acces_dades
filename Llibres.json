@@ -1,0 +1,133 @@
+[{
+  "_id": {
+    "$oid": "61c7952c9838965362fea40c"
+  },
+  "Id": "1",
+  "Titol": "El senor de los anillos",
+  "Autor": "J.R.R. Tolkien",
+  "Any_naixement": "1890",
+  "Any_publicacio": "1950",
+  "Editorial": "Minotauro",
+  "Nombre_pagines": "1392"
+},{
+  "_id": {
+    "$oid": "61c7952c9838965362fea40d"
+  },
+  "Id": "2",
+  "Titol": "El juego de Ender",
+  "Autor": "Orson Scott Card",
+  "Any_naixement": "1951",
+  "Any_publicacio": "1977",
+  "Editorial": "Ediciones B",
+  "Nombre_pagines": "509"
+},{
+  "_id": {
+    "$oid": "61c7952c9838965362fea40e"
+  },
+  "Id": "3",
+  "Titol": "Lazarillo de Tormes",
+  "Autor": "Anonimo",
+  "Any_naixement": "",
+  "Any_publicacio": "1554",
+  "Editorial": "Clasicos Populares",
+  "Nombre_pagines": "150"
+},{
+  "_id": {
+    "$oid": "61c7952c9838965362fea40f"
+  },
+  "Id": "4",
+  "Titol": "Las uvas de la ira",
+  "Autor": "John Steinbeck",
+  "Any_naixement": "1902",
+  "Any_publicacio": "1939",
+  "Editorial": "Alianza",
+  "Nombre_pagines": "619"
+},{
+  "_id": {
+    "$oid": "61c7952c9838965362fea410"
+  },
+  "Id": "5",
+  "Titol": "Watchmen",
+  "Autor": "Alan Moore",
+  "Any_naixement": "1953",
+  "Any_publicacio": "1980",
+  "Editorial": "ECC",
+  "Nombre_pagines": "416"
+},{
+  "_id": {
+    "$oid": "61c7952c9838965362fea411"
+  },
+  "Id": "6",
+  "Titol": "La hoguera de las vanidades",
+  "Autor": "Tom Wolfe",
+  "Any_naixement": "1930",
+  "Any_publicacio": "1980",
+  "Editorial": "Anagrama",
+  "Nombre_pagines": "636"
+},{
+  "_id": {
+    "$oid": "61c7952c9838965362fea412"
+  },
+  "Id": "7",
+  "Titol": "La familia de Pascual Duarte",
+  "Autor": "Camilo Jose Cela",
+  "Any_naixement": "1916",
+  "Any_publicacio": "1942",
+  "Editorial": "Destino",
+  "Nombre_pagines": "165"
+},{
+  "_id": {
+    "$oid": "61c7952c9838965362fea413"
+  },
+  "Id": "8",
+  "Titol": "El senor de las moscas",
+  "Autor": "William Golding",
+  "Any_naixement": "1911",
+  "Any_publicacio": "1972",
+  "Editorial": "Alianza",
+  "Nombre_pagines": "236"
+},{
+  "_id": {
+    "$oid": "61c7952c9838965362fea414"
+  },
+  "Id": "9",
+  "Titol": "La ciudad de los prodigios",
+  "Autor": "Eduardo Mendoza",
+  "Any_naixement": "1943",
+  "Any_publicacio": "1986",
+  "Editorial": "Seix Barral",
+  "Nombre_pagines": "541"
+},{
+  "_id": {
+    "$oid": "61c7952c9838965362fea415"
+  },
+  "Id": "10",
+  "Titol": "Ensayo sobre la ceguera",
+  "Autor": "Jose Saramago",
+  "Any_naixement": "1922",
+  "Any_publicacio": "1995",
+  "Editorial": "Santillana",
+  "Nombre_pagines": "439"
+},{
+  "_id": {
+    "$oid": "61c7952c9838965362fea416"
+  },
+  "Id": "11",
+  "Titol": "Los surcos del azar",
+  "Autor": "Paco Roca",
+  "Any_naixement": "1969",
+  "Any_publicacio": "2013",
+  "Editorial": "Astiberri",
+  "Nombre_pagines": "349"
+},{
+  "_id": {
+    "$oid": "61c7952c9838965362fea417"
+  },
+  "Id": "12",
+  "Titol": "Ghosts of Spain",
+  "Autor": "Giles Tremlett",
+  "Any_naixement": "1962",
+  "Any_publicacio": "2006",
+  "Editorial": "Faber & Faber",
+  "Nombre_pagines": "468"
+}]
