@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Información De Paises</h1>
+      <h2>Ximo Quintana Ferrer</h2>
+    </header>
+    <main>
+      <div class="column">
+        <div class="row mb">
+          <p>Pais</p>
+          <input type="text" id="selector" name="selector" />
+          <button type="button" onclick="getCountryInfo()">Buscar</button>
+          <a>*Buscar Paises en Ingles</a>
+          <button type="button" onclick="guardar()" id="btn_guardar">
+            Guardar
+          </button>
+        </div>
+        <div class="row">
+          <div class="elementos-izq column">
+            <!-- Nombre Oficial -->
+            <div class="row elemento">
+              <p class="elementotitulo">Nombre Oficial</p>
+              <textarea
+                type="text"
+                id="nombre_oficial"
+                name="nombre_oficial"
+                value="?"
+                readonly
+              ></textarea>
+            </div>
+            <!-- Dominio -->
+            <div class="row elemento">
+              <p class="elementotitulo">Dominio</p>
+              <input
+                type="text"
+                id="dominio"
+                name="dominio"
+                value="?"
+                readonly
+              />
+            </div>
+            <!-- Moneda -->
+            <div class="row">
+              <p class="elementotitulo">Moneda</p>
+              <input type="text" id="moneda" name="moneda" value="?" readonly />
+            </div>
+          </div>
+          <div class="elementos elementos-der column">
+            <!-- Nombre Comun -->
+            <div class="row elemento" style="margin-bottom: 24px">
+              <p class="elementotitulo">Nombre Común</p>
+              <input
+                type="text"
+                id="nombre_comun"
+                name="nombre_comun"
+                value="?"
+                readonly
+              />
+            </div>
+            <!-- Region -->
+            <div class="row elemento">
+              <p class="elementotitulo">Region</p>
+              <input type="text" id="region" name="region" value="?" readonly />
+            </div>
+            <!-- Capital -->
+            <div class="row">
+              <p class="elementotitulo">Capital</p>
+              <input
+                type="text"
+                id="capital"
+                name="capital"
+                value="?"
+                readonly
+              />
+            </div>
+          </div>
+        </div>
+        <img id="bandera" width="778" />
+      </div>
+    </main>
+    <script>
+      function getCountryInfo() {
+        var strBusquedaPais = document.getElementById("selector").value;
+        axios
+          .get("https://restcountries.com/v3.1/name/" + strBusquedaPais)
+          .then((response) => {
+            console.log(response.data);
+            document.getElementById("nombre_oficial").value =
+              response.data[0].translations.spa.official;
+            document.getElementById("nombre_comun").value =
+              response.data[0].translations.spa.common;
+            document.getElementById("dominio").value = response.data[0].tld;
+            document.getElementById("region").value = response.data[0].region;
+
+            for (var moneda in response.data[0].currencies) {
+              let simbolo = response.data[0].currencies[moneda].symbol;
+              let nombre = response.data[0].currencies[moneda].name;
+              document.getElementById("moneda").value = simbolo + " " + nombre;
+            }
+
+            document.getElementById("capital").value = response.data[0].capital;
+            document.getElementById("bandera").src = response.data[0].flags.png;
+            document.getElementById("bandera").style =
+              "margin: 10px 0px 0px 240px; width: 300px; height: 150px;";
+          })
+          .catch((error) => {
+            alert(error);
+          });
+      }
+    </script>
+    <script type="text/javascript">
+      function guardar() {
+        var busqueda = document.getElementById("selector").value;
+        var nombre_oficial = document.getElementById("nombre_oficial").value;
+        var nombre_comun = document.getElementById("nombre_comun").value;
+        var dominio = document.getElementById("dominio").value;
+        var region = document.getElementById("region").value;
+        var moneda = document.getElementById("moneda").value;
+        var bandera = document.getElementById("bandera").src;
+        $.ajax({
+          type: "POST", //metode POST per a enviar dades al servidor
+          url: "guardar.php", // ruta del fitxer PHP del servidor
+          data: {
+            varBusqueda: busqueda,
+            varNombreOficial: nombre_oficial,
+            varNombreComun: nombre_comun,
+            varDominio: dominio,
+            varRegion: region,
+            varMoneda: moneda,
+            varBandera: bandera,
+          }, // dades a enviar (p.ex. {valor:valor, nom:nom})
+          success: function (response) {
+            //resultat del PHP del servidor
+            alert(response);
+          },
+          error: function () {
+            alert("Error");
+          },
+        });
+      }
+    </script>
+  </body>
+</html>

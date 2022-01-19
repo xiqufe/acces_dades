@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela&family=Varela+Round&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+}
+
+h1 {
+  font-family: "Varela";
+  font-size: 72px;
+}
+h2 {
+  font-family: "Varela";
+  font-size: 30px;
+}
+
+p {
+  font-family: "Varela";
+  font-size: 20px;
+  color: white;
+  background-color: #1e1e1e;
+  padding: 5px;
+}
+
+input {
+  font-size: 20px;
+  text-align: center;
+  border-color: #1e1e1e;
+  width: 200px;
+}
+
+textarea {
+  font-size: 20px;
+  text-align: center;
+  border-color: #1e1e1e;
+  width: fit-content;
+}
+
+button {
+  margin-left: 15px;
+  padding: 5px;
+  background-color: #e58411;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+main {
+  width: 768px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 10px;
+
+  background-color: white;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+
+.elementos-izq {
+  width: 384px;
+}
+
+.elementos-der {
+  width: 384px;
+  margin-left: 10px;
+}
+
+.elemento {
+  margin-bottom: 10px;
+}
+
+.elementotitulo {
+  width: 200px;
+  text-align: center;
+}
+
+#btn_guardar {
+  background-color: rgb(28, 161, 155);
+}
