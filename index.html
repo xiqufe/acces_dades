@@ -89,6 +89,8 @@
       </div>
     </main>
     <script>
+      //Funció: getCountryInfo()
+      //Funció que llig la api de REST COUNTRIES i l'estableix als inputs.
       function getCountryInfo() {
         var strBusquedaPais = document.getElementById("selector").value;
         axios
@@ -119,6 +121,8 @@
       }
     </script>
     <script type="text/javascript">
+      //Funció: guardar()
+      //Funció que executa un php que guarda en la base de dades la informació d'un país obtenia per la cerca.
       function guardar() {
         var busqueda = document.getElementById("selector").value;
         var nombre_oficial = document.getElementById("nombre_oficial").value;
